@@ -8,6 +8,8 @@ import json
 import socket
 import re
 
+import config
+
 # js2py files
 from md5 import md5
 from script import script
@@ -30,8 +32,8 @@ def get_host_ip():
 
 CALLBACK = 'jQuery112402485404066979351_1600776710877'
 IP = get_host_ip()
-USERNAME = "19S051042"
-PASSWORD = "ACgV4ZAfXC5&zJ10"
+USERNAME = config.USERNAME
+PASSWORD = config.PASSWORD
 
 def getChallenge():
     params = {
